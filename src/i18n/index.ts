@@ -9,7 +9,14 @@ import ja from './locales/ja.json'
 import zh from './locales/zh.json'
 import ru from './locales/ru.json'
 
-export const supportedLanguages = [
+export interface LanguageItem {
+  code: string
+  name: string
+  nativeName: string
+  flag: string
+}
+
+export const supportedLanguages: LanguageItem[] = [
   { code: 'en', name: 'English', nativeName: 'English', flag: '🇺🇸' },
   { code: 'uk', name: 'Ukrainian', nativeName: 'Українська', flag: '🇺🇦' },
   { code: 'es', name: 'Spanish', nativeName: 'Español', flag: '🇪🇸' },
