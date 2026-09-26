@@ -4,6 +4,10 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 
 import en from './locales/en.json'
 import uk from './locales/uk.json'
+import es from './locales/es.json'
+import ja from './locales/ja.json'
+import zh from './locales/zh.json'
+import ru from './locales/ru.json'
 
 export const supportedLanguages = [
   { code: 'en', name: 'English', nativeName: 'English', flag: '🇺🇸' },
@@ -17,6 +21,10 @@ export const supportedLanguages = [
 export const resources = {
   en: { translation: en },
   uk: { translation: uk },
+  es: { translation: es },
+  ja: { translation: ja },
+  zh: { translation: zh },
+  ru: { translation: ru },
 }
 
 i18n
