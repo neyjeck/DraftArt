@@ -14,6 +14,7 @@ import {
   Hand,
 } from 'lucide-react'
 import { BrailleViewportRender } from './BrailleViewportRender'
+import { MockHeroCards } from './MockHeroCards'
 
 interface DotaInGameSimulatorProps {
   brailleLines: string[]
@@ -30,6 +31,7 @@ export const DotaInGameSimulator: React.FC<DotaInGameSimulatorProps> = ({
 }) => {
   const { t } = useTranslation()
   const [selectedAttribute, setSelectedAttribute] = useState<string>('all')
+  const [showHeroes, setShowHeroes] = useState(true)
 
   // Pan and Zoom Navigation State
   const [zoom, setZoom] = useState(1)
@@ -166,6 +168,11 @@ export const DotaInGameSimulator: React.FC<DotaInGameSimulatorProps> = ({
 
           {/* Right: Layout Switcher & Pan/Zoom Controls */}
           <div className="flex items-center gap-2">
+            <MockHeroCards
+              showHeroes={showHeroes}
+              onToggleShowHeroes={() => setShowHeroes(!showHeroes)}
+            />
+
             {/* Zoom Controls */}
             <div className="flex items-center gap-1 bg-cyber-900/90 border border-cyber-border rounded-lg p-0.5">
               <button
