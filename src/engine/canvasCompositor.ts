@@ -31,6 +31,21 @@ export function compositeLayersToImageData(
     ctx.save()
     ctx.globalAlpha = Math.max(0, Math.min(1, layer.opacity / 100))
 
+    // Apply CSS-compatible filters for brightness, contrast, invert
+    const filterParts: string[] = []
+    if (layer.brightness !== 0) {
+      filterParts.push(`brightness(${100 + layer.brightness}%)`)
+    }
+    if (layer.contrast !== 0) {
+      filterParts.push(`contrast(${100 + layer.contrast}%)`)
+    }
+    if (layer.invert) {
+      filterParts.push('invert(100%)')
+    }
+    if (filterParts.length > 0) {
+      ctx.filter = filterParts.join(' ')
+    }
+
     // Handle horizontal flip
     if (layer.flipH) {
       ctx.translate(layer.x + layer.width, layer.y)
