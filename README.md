@@ -1,7 +1,7 @@
-# 🌸 GhoulGrid (Dota 2 Anime Multi-Layer Grid Art Studio & In-Game Simulator)
+# 🌸 DraftArt (Dota 2 Anime Multi-Layer Grid Art Studio & In-Game Simulator)
 
 <p align="center">
-  <img src="./public/vite.svg" width="96" height="96" alt="GhoulGrid Logo" />
+  <img src="./public/vite.svg" width="96" height="96" alt="DraftArt Logo" />
 </p>
 
 <p align="center">
@@ -52,7 +52,7 @@
 - **60 FPS Performance**: Debounced `requestAnimationFrame` rendering pipeline with live performance telemetry (render time ms, active dots, total character count).
 
 ### 4. 🎮 Authentic Source 2 Engine Compatibility (`\u2800`)
-- **Source 2 Space Trimming Prevention**: Dota 2 collapses standard ASCII whitespace characters. GhoulGrid strictly enforces **`\u2800` (Braille Pattern Blank)** for all empty subpixel cells. This guarantees pixel-perfect geometry and row alignment inside the game.
+- **Source 2 Space Trimming Prevention**: Dota 2 collapses standard ASCII whitespace characters. DraftArt strictly enforces **`\u2800` (Braille Pattern Blank)** for all empty subpixel cells. This guarantees pixel-perfect geometry and row alignment inside the game.
 
 ### 5. 🕹️ Dota 2 Live In-Game Simulator
 - Authentic **16:9 Hero Pick Viewport** styled after Dota 2 Source 2 Panorama UI.
@@ -149,5 +149,5 @@ npm run preview
 
 ## 📜 License
 
-MIT License © 2026 GhoulGrid Studio.
+MIT License © 2026 DraftArt Studio.
 All Dota 2 assets, hero icons, and trademarks belong to Valve Corporation.

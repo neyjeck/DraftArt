@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "GhoulGrid",
+    "title": "DraftArt",
     "subtitle": "Dota 2 Аниме Многослойная Grid Art Студия",
     "tagline": "Превращай любимых аниме-персонажей, мемы и стикеры в арт для сетки выбора героев Dota 2 с помощью шрифта Брайля.",
     "clientOnlyBadge": "100% Клиентская Безопасность",
@@ -75,7 +75,7 @@
     "title": "Генерация Конфигурации Dota 2",
     "description": "Сгенерируй готовый файл hero_grid_config.json для папки Steam userdata.",
     "configName": "Название Раскладки",
-    "configNamePlaceholder": "GhoulGrid Anime Art",
+    "configNamePlaceholder": "DraftArt Anime Art",
     "mergeTitle": "Объединение с Существующим Конфигом",
     "mergeDescription": "Загрузи свой текущий hero_grid_config.json, чтобы добавить арт без потери созданных ранее сеток.",
     "uploadExisting": "Выбрать существующий hero_grid_config.json",

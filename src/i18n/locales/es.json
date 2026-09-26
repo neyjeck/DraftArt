@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "GhoulGrid",
+    "title": "DraftArt",
     "subtitle": "Estudio de Grid Art Anime Multicapa para Dota 2",
     "tagline": "Transforma tus personajes de anime, memes y pegatinas favoritos en arte de cuadrícula para Dota 2 usando Unicode Braille.",
     "clientOnlyBadge": "100% Lado del Cliente",
@@ -75,7 +75,7 @@
     "title": "Generar Configuración de Dota 2",
     "description": "Genera un archivo hero_grid_config.json válido listo para colocar en la carpeta userdata de Steam.",
     "configName": "Nombre de Cuadrícula",
-    "configNamePlaceholder": "GhoulGrid Anime Art",
+    "configNamePlaceholder": "DraftArt Anime Art",
     "mergeTitle": "Combinar con Configuración Existente",
     "mergeDescription": "Sube tu hero_grid_config.json actual para agregar este arte sin perder tus cuadrículas existentes.",
     "uploadExisting": "Seleccionar hero_grid_config.json existente",

@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const changeLanguage = (code: string) => {
     i18n.changeLanguage(code)
-    localStorage.setItem('ghoulgrid_lang', code)
+    localStorage.setItem('draftart_lang', code)
     setLangMenuOpen(false)
   }
 

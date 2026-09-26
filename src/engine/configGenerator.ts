@@ -36,7 +36,7 @@ export function buildDotaHeroGridConfig(
   }))
 
   const newConfig: DotaHeroGridConfig = {
-    config_name: configName || 'GhoulGrid Anime Art',
+    config_name: configName || 'DraftArt Anime Art',
     categories,
   }
 

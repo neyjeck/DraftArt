@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "GhoulGrid",
+    "title": "DraftArt",
     "subtitle": "Dota 2 Anime Multi-Layer Grid Art Studio",
     "tagline": "Turn your favorite anime characters, memes, and stickers into custom Dota 2 hero selection grid art using Unicode Braille.",
     "clientOnlyBadge": "100% Client-Side",
@@ -75,7 +75,7 @@
     "title": "Generate Dota 2 Configuration",
     "description": "Generate a valid hero_grid_config.json ready to drop into Steam userdata folder.",
     "configName": "Grid Config Name",
-    "configNamePlaceholder": "GhoulGrid Anime Art",
+    "configNamePlaceholder": "DraftArt Anime Art",
     "mergeTitle": "Merge with Existing Config",
     "mergeDescription": "Upload your current hero_grid_config.json to append this art without losing existing grids.",
     "uploadExisting": "Choose existing hero_grid_config.json",

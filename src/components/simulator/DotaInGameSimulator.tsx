@@ -27,7 +27,7 @@ export const DotaInGameSimulator: React.FC<DotaInGameSimulatorProps> = ({
   brailleLines,
   gridWidth,
   gridHeight,
-  configName = 'GhoulGrid Anime Art',
+  configName = 'DraftArt Anime Art',
 }) => {
   const { t } = useTranslation()
   const [selectedAttribute, setSelectedAttribute] = useState<string>('all')

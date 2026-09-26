@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "GhoulGrid",
+    "title": "DraftArt",
     "subtitle": "Dota 2 アニメ・マルチレイヤー・グリッドアートスタジオ",
     "tagline": "お気に入りのアニメキャラクター、ミーム、ステッカーを点字Unicodeアートに変換し、Dota 2のヒーロー選択画面を飾ろう。",
     "clientOnlyBadge": "100% クライアント処理",
@@ -75,7 +75,7 @@
     "title": "Dota 2 設定ファイルの生成",
     "description": "Steam userdata フォルダにそのまま配置できる valid な hero_grid_config.json を生成します。",
     "configName": "グリッド名",
-    "configNamePlaceholder": "GhoulGrid Anime Art",
+    "configNamePlaceholder": "DraftArt Anime Art",
     "mergeTitle": "既存設定ファイルと統合",
     "mergeDescription": "既存の hero_grid_config.json をアップロードすると、現在のグリッドを維持したまま追加できます。",
     "uploadExisting": "既存の hero_grid_config.json を選択",

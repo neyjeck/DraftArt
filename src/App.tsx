@@ -80,7 +80,7 @@ export default function App() {
   )
 
   // Config Generator State
-  const [configName, setConfigName] = useState('GhoulGrid Anime Art')
+  const [configName, setConfigName] = useState('DraftArt Anime Art')
   const [generatorOptions, setGeneratorOptions] = useState<GeneratorOptions>({
     startX: 0,
     startY: 0,
@@ -366,7 +366,7 @@ export default function App() {
       <footer className="border-t border-cyber-border/70 bg-cyber-950/90 py-6 mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cyber-muted">
           <div className="flex items-center gap-2">
-            <span className="font-heading font-bold text-sakura">GhoulGrid Studio</span>
+            <span className="font-heading font-bold text-sakura">DraftArt Studio</span>
             <span>•</span>
             <span className="flex items-center gap-1 text-green-neon">
               <ShieldCheck className="w-3.5 h-3.5" />

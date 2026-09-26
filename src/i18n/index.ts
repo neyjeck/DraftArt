@@ -44,7 +44,7 @@ i18n
     debug: false,
     detection: {
       order: ['localStorage', 'navigator'],
-      lookupLocalStorage: 'ghoulgrid_lang',
+      lookupLocalStorage: 'draftart_lang',
       caches: ['localStorage'],
     },
     interpolation: {

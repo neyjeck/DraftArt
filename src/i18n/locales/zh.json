@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "GhoulGrid",
+    "title": "DraftArt",
     "subtitle": "Dota 2 动漫多图层网格艺术工作室 & 游戏模拟器",
     "tagline": "使用 Unicode 盲文将你喜爱的动漫角色、表情包和贴图转换为 Dota 2 英雄选择界面网格艺术图。",
     "clientOnlyBadge": "100% 本地纯前端处理",
@@ -75,7 +75,7 @@
     "title": "生成 Dota 2 英雄网格配置文件",
     "description": "生成完全符合官方格式的 hero_grid_config.json 文件，直接放入 Steam 目录即可生效。",
     "configName": "网格布局名称",
-    "configNamePlaceholder": "GhoulGrid Anime Art",
+    "configNamePlaceholder": "DraftArt Anime Art",
     "mergeTitle": "与现有配置合并",
     "mergeDescription": "上传现有的 hero_grid_config.json，可在保留已有网格的前提下追加新的图案。",
     "uploadExisting": "选择已有 hero_grid_config.json",
