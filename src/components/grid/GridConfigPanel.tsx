@@ -5,9 +5,10 @@ import {
   MAX_GRID_WIDTH,
   MIN_GRID_HEIGHT,
   MAX_GRID_HEIGHT,
+  ASPECT_RATIO_PRESETS,
   calculateSubpixelResolution,
 } from '@/types/grid'
-import { Grid, Cpu, RotateCcw } from 'lucide-react'
+import { Grid, Cpu, RotateCcw, Monitor } from 'lucide-react'
 
 interface GridConfigPanelProps {
   width: number
@@ -26,6 +27,15 @@ export const GridConfigPanel: React.FC<GridConfigPanelProps> = ({
 }) => {
   const { t } = useTranslation()
   const { canvasWidth, canvasHeight } = calculateSubpixelResolution(width, height)
+
+  const activePreset = ASPECT_RATIO_PRESETS.find(
+    (p) => p.width === width && p.height === height
+  )
+
+  const handleSelectPreset = (presetWidth: number, presetHeight: number) => {
+    onWidthChange(presetWidth)
+    onHeightChange(presetHeight)
+  }
 
   return (
     <div className="glass-panel rounded-2xl p-5 border border-cyber-border/70 space-y-4">
@@ -53,6 +63,40 @@ export const GridConfigPanel: React.FC<GridConfigPanelProps> = ({
           <RotateCcw className="w-3 h-3 text-cyan-neon" />
           <span className="text-[11px]">{t('grid.clearAll')}</span>
         </button>
+      </div>
+
+      {/* Aspect Ratio Presets */}
+      <div className="space-y-1.5">
+        <div className="flex items-center gap-1.5 text-xs text-slate-300 font-medium">
+          <Monitor className="w-3.5 h-3.5 text-sakura" />
+          <span>{t('grid.presets')}</span>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          {ASPECT_RATIO_PRESETS.map((preset) => {
+            const isSelected = activePreset?.id === preset.id
+            return (
+              <button
+                key={preset.id}
+                onClick={() => handleSelectPreset(preset.width, preset.height)}
+                className={`p-2 rounded-xl text-left border transition-all duration-200 ${
+                  isSelected
+                    ? 'bg-sakura/15 border-sakura text-white shadow-sakura-sm font-medium'
+                    : 'bg-cyber-850/60 border-cyber-border/60 text-slate-300 hover:border-sakura/40 hover:bg-cyber-800'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-semibold">{t(preset.nameKey)}</span>
+                  <span className="text-[10px] font-mono px-1 py-0.2 rounded bg-cyber-900 border border-cyber-border text-cyan-neon">
+                    {preset.ratio}
+                  </span>
+                </div>
+                <div className="text-[10px] text-cyber-muted font-mono mt-0.5">
+                  {preset.width}×{preset.height} chars
+                </div>
+              </button>
+            )
+          })}
+        </div>
       </div>
 
       {/* Grid Width and Height Inputs */}

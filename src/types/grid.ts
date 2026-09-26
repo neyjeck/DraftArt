@@ -9,7 +9,43 @@ export interface AspectRatioPreset {
   width: number
   height: number
   ratio: string
+  description: string
 }
+
+export const ASPECT_RATIO_PRESETS: AspectRatioPreset[] = [
+  {
+    id: 'compact',
+    nameKey: 'grid.presetCompact',
+    width: 40,
+    height: 24,
+    ratio: '16:10',
+    description: 'Compact Block (40×24)',
+  },
+  {
+    id: 'standard',
+    nameKey: 'grid.presetStandard',
+    width: 60,
+    height: 34,
+    ratio: '16:9',
+    description: 'Standard 16:9 (60×34)',
+  },
+  {
+    id: 'large',
+    nameKey: 'grid.presetLarge',
+    width: 90,
+    height: 50,
+    ratio: '16:9',
+    description: 'High-Res 16:9 (90×50)',
+  },
+  {
+    id: 'ultrawide',
+    nameKey: 'grid.presetUltrawide',
+    width: 120,
+    height: 50,
+    ratio: '21:9',
+    description: 'Ultrawide 21:9 (120×50)',
+  },
+]
 
 export const MIN_GRID_WIDTH = 20
 export const MAX_GRID_WIDTH = 160
